@@ -1,0 +1,29 @@
+{
+    "name": "zipferot3000/laravel-filepond-adapter",
+	"description": "Laravel adapter for filepond uploading.",
+    "license": "MIT",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Zipferot3000\\LaravelFilepondAdapter\\FPAdapterServiceProvider"
+			]
+		}
+	},
+    "autoload": {
+        "psr-4": {
+            "Zipferot3000\\LaravelFilepondAdapter\\": "src/"
+        },
+		"files": [
+			"src/helpers.php"
+		]
+    },
+    "authors": [
+        {
+            "name": "Ivan Dovgal",
+            "email": "zipferot3000@gmail.com"
+        }
+    ],
+    "require": {
+		"spatie/laravel-medialibrary": "^10.0.0"
+	}
+}
