@@ -25,5 +25,7 @@
     ],
     "require": {
 		"spatie/laravel-medialibrary": "^10.0.0"
-	}
+	},
+	"minimum-stability": "dev",
+    "prefer-stable": true
 }
