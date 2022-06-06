@@ -11,6 +11,12 @@ class FPAdapterServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/fp_adapter.php' => config_path('fp_adapter.php'),
         ]);
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                ClearTemporaryFiles::class,
+            ]);
+        }
     }
 
     public function register()
