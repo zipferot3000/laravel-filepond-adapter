@@ -1,6 +1,6 @@
 {
-    "name": "zipferot3000/laravel-filepond-adapter",
-	"description": "Laravel adapter for filepond uploading.",
+    "name": "laravel-filepond-adapter",
+    "description": "Laravel adapter for filepond uploading.",
     "license": "MIT",
 	"extra": {
 		"laravel": {
