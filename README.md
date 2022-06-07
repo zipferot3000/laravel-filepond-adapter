@@ -82,7 +82,7 @@ fp_adapter()->formatMediaToFilepond($media);
 - To move media from temporary to new model
 ($from and $to parameter must implement HasMedia interface)
 ```php
-fp_adapter()->moveFiles($files_uuid_array, $new_media_collection_name, $from, $to);
+fp_adapter()->moveFiles($files_uuid_array, $new_media_collection_name, $fs_disc_name, $from, $to);
 ```
 
 ## Package configuration
