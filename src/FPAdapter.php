@@ -82,4 +82,14 @@ class FPAdapter
             Route::delete('/', fn() => (new FPAdapter())->destroyTemporaryFile(request(), auth()->user()));
         });
     }
+
+    public function moveFiles(array $files, string $mc_name, HasMedia $from, HasMedia $to): void
+    {
+        $media = $from->getMedia(config('fp_adapter.media_collection'));
+        foreach ($media as $file) {
+            if (in_array($file->uuid, $files)) {
+                $file->move($to, $mc_name);
+            }
+        }
+    }
 }

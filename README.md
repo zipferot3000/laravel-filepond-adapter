@@ -79,6 +79,12 @@ fp_adapter()->destroyTemporaryFile(request(), auth()->user());
 fp_adapter()->formatMediaToFilepond($media);
 ```
 
+- To move media from temporary to new model
+($from and $to parameter must implement HasMedia interface)
+```php
+fp_adapter()->moveFiles($files_uuid_array, $new_media_collection_name, $from, $to);
+```
+
 ## Package configuration
 You can override the default options. First publish the configuration:
 ```bash
